@@ -3,3 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.columnContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.column{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 500px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.blackChip{
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.redChip{
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
