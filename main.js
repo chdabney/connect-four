@@ -25,6 +25,7 @@ function addToken(columns) {
   } else if (playerTurn === 1) {
     currentPlayer.textContent = `Current turn: Black`;
     chip.setAttribute("class", "redChip");
+    chip.classList.add("fallAnimation");
     columnClicked.append(chip);
     board[columnClicked.id].splice(
       columnClicked.children.length,
@@ -36,6 +37,7 @@ function addToken(columns) {
   } else if (playerTurn === 2) {
     currentPlayer.textContent = `Current turn: Red`;
     chip.setAttribute("class", "blackChip");
+    chip.classList.add("fallAnimation");
     columnClicked.append(chip);
     board[columnClicked.id].splice(
       columnClicked.children.length,
